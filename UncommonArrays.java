@@ -15,7 +15,7 @@ public class UncommonArrays {
         ans = new int[len];
         while(i<a.length&&j<b.length){
 
-            if(a[i]<a[j]){
+            if(a[i]<b[j]){
 
 
                 System.out.println(a[i]);
@@ -24,10 +24,10 @@ public class UncommonArrays {
             }
 
 
-            else if(a[i]>a[j]){
+            else if(a[i]>b[j]){
 
 
-                System.out.println(a[j]);
+                System.out.println(b[j]);
                 j++;
             }
 
@@ -40,7 +40,19 @@ public class UncommonArrays {
 
         }
 
+while(i<a.length/*&&a[i]!=b[j]*/){
 
+    System.out.println(a[i]);
+    i++;
+
+}
+
+        while(j<b.length/*&&a[i]!=b[j]*/){
+
+            System.out.println(b[j]);
+            j++;
+
+        }
 
 
 
@@ -50,8 +62,8 @@ public class UncommonArrays {
 
     public static void main(String[] args) {
         UncommonArrays sol = new UncommonArrays();
-        int a[]= {1, 2,3,4};
-        int b[]= { 4, 5,6,7,8};
+        int a[]= {1, 4, 6, 9, 12,14,25};
+        int b[]= {2, 4, 7, 8, 9, 10,13,18,20,21};
 
         sol.result(a,b);
 
